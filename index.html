@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="certificados-container">
+        <h1>Meus Certificados</h1>
+        <div id="lista-certificados"></div>
+        <div class="paginacao">
+          <button id="anterior" disabled>Anterior</button>
+          <button id="proximo">Próximo</button>
+        </div>
+      </div>
+      <div id="modal-preview">
+        <span id="close-modal">&times;</span>
+        <img
+          id="modal-image"
+          src=""
+          alt="Preview do Certificado"
+          style="display: none"
+        />
+        <iframe id="modal-pdf" src="" style="display: none"></iframe>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
